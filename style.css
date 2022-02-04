@@ -1,0 +1,86 @@
+body {
+  background-color: lightblue;
+}
+
+#game {
+  animation: enter 2s;
+  /* box-shadow: 20px 20px 20px;
+  background-color: blue;
+  border-radius: 5px;
+  width: fit-content; */
+}
+.letter {
+  text-align:center;
+  font-size: 3vw;
+  color: white;
+  width: 10%;
+  height: 10vh;
+  background-color: grey;
+  margin: 5px;
+  box-shadow: 5px 5px 5px black;
+  border: solid;
+  border-color: grey;
+}
+
+.letter-correct {
+  border: solid;
+  border-color: grey;
+  text-align:center;
+  font-size: 5vh;
+  color: white;
+  width: 9vh;
+  height: 9vh;
+  margin: 5px;
+  box-shadow: 5px 5px 5px black;
+  background-color: green;
+}
+
+.letter-contains {
+  border: solid;
+  border-color: grey;
+  text-align:center;
+  font-size: 5vh;
+  color: white;
+  width: 9vh;
+  height: 9vh;
+  margin: 5px;
+  box-shadow: 5px 5px 5px black;
+  background-color: blue;
+}
+
+.letter-regular {
+  border: solid;
+  border-color: grey;
+  text-align:center;
+  font-size: 5vh;
+  color: white;
+  width: 9vh;
+  height: 9vh;
+  background-color: grey;
+  margin: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+@keyframes enter {
+    from {
+      opacity: 0%;
+    } to {
+      opacity: 100%;
+    }
+}
+
+@keyframes current {
+  from {
+    border-radius: 0px;
+  } to {
+    border-radius: 25px;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: grey;
+  } to {
+    border-color: white;
+  }
+}
